@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background{
+  background-image: url('./assets/neutBGLanding.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.landingContent {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10;
+}
+
+.landingBox {
+  height: 100%;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landingTitle {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+
+.landingTitle.moveLeft {
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+
+
+.logoImage {
+  background-image: url('./assets/uniTrafficLogo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 189px;
+  width: 300px;
+}
+
+.startButton {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.startButton.moveRight {
+  transform: translateX(150px);
+  opacity: 0;
+}
+
+.startButton:hover {
+  background-color: #333;
+}
+
+.landingText {
+  max-width: 600px;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+}
