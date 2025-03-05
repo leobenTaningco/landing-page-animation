@@ -55,6 +55,23 @@ html, body {
   opacity: 1;
 }
 
+.landingLogin {
+  text-align: center;
+  display: flex;
+  opacity: 0;
+  transition: ease-in-out, opacity 1.3s ease-in-out, clip-path 1s ease-in-out;
+  position: fixed;
+  width: 30%;
+  transform: translateX(70%);
+  clip-path: inset(0 0 0 99%);
+}
+
+.landingLogin.moveRight {
+  transform: translateX(70%);
+  opacity: 1;
+
+  clip-path: inset(0 0 0 0);
+}
 
 
 .logoImage {
@@ -74,11 +91,10 @@ html, body {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .startButton.moveRight {
-  transform: translateX(150px);
   opacity: 0;
 }
 

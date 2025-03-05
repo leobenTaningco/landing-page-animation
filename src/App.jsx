@@ -21,7 +21,9 @@ function App() {
               sticker registration and tracking violations with a quick scan.
             </p>
           </div>
-          {login && <Login />}
+          <div className={`landingLogin ${login ? 'moveRight' : ''}`}>
+            {login && <Login />}
+          </div>
         </div>
       </div>  
     </div>
