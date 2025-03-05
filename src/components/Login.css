@@ -1,9 +1,32 @@
 .loginContainer{
-    width: 20vw;
+    width: 30%;
     height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: red ;
+    background-color: rgba(255, 255, 255, 0.77);
+    margin: 5%;
+}
+.logoNEULogin{
+    background-image: url("../assets/neutLogo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    aspect-ratio: 1/1;
+    height: 17%;
+    margin-block: 4%;
+}
+
+.loginBox{
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    height: 65%;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+.loginTitle{
+    
 }

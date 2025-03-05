@@ -11,7 +11,7 @@ function App() {
       <Header />
       <div className="landingContent">
         <div className="landingBox">
-          <div className="landingTitle">
+          <div className={`landingTitle ${login ? 'moveLeft' : ''}`}>
             <div className="logoImage" />
             <button className={`startButton ${login ? 'moveRight' : ''}`} onClick={() => setLogin(true)}>
               Get Started
@@ -21,7 +21,7 @@ function App() {
               sticker registration and tracking violations with a quick scan.
             </p>
           </div>
-          <Login/>
+          {login && <Login />}
         </div>
       </div>  
     </div>

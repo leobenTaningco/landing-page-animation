@@ -46,12 +46,13 @@ html, body {
   align-items: center;
   gap: 20px;
   transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+  position: fixed;
 }
 
 
 .landingTitle.moveLeft {
   transform: translateX(-50%);
-  opacity: 0;
+  opacity: 1;
 }
 
 
